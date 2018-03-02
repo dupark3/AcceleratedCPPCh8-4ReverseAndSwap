@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+#include "my_reverse.h"
+
 typedef std::vector<int>::size_type vec_size;
 
 int main()
@@ -12,7 +14,7 @@ int main()
     for (vec_size i = 0; i != vec.size(); ++i)
         std::cout << vec[i] << " ";
 
-    reverse(vec.begin(), vec.end());
+    my_reverse(vec.begin(), vec.end());
 
     std::cout << std::endl << "Reversed vector is: ";
     for(vec_size i = 0; i != vec.size(); ++i)
